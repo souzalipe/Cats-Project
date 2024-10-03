@@ -9,4 +9,9 @@
 <ion-content>
   <ion-img [src]="catImageUrl" *ngIf="catImageUrl"></ion-img>
   <ion-button (click)="getCat()">Carregar outro gato</ion-button>
+  
+  <!-- Botões para navegar para as novas páginas -->
+  <ion-button routerLink="/page1">Ir para Page 1</ion-button>
+  <ion-button routerLink="/page2">Ir para Page 2</ion-button>
 </ion-content>
+
