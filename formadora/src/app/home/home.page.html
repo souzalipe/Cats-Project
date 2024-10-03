@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Gatos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img [src]="catImageUrl" *ngIf="catImageUrl"></ion-img>
+  <ion-button (click)="getCat()">Carregar outro gato</ion-button>
+</ion-content>
