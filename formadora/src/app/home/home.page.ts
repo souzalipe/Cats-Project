@@ -7,7 +7,7 @@ import { CatService } from '../services/cat.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  catImageUrl: string = ''; // Inicializando com uma string vazia
+  catImageUrl: string = ''; 
 
   constructor(private catService: CatService) {}
 
@@ -17,7 +17,7 @@ export class HomePage implements OnInit {
 
   getCat() {
     this.catService.getCat().subscribe((data) => {
-      this.catImageUrl = data[0].url; // Armazena a URL da imagem do gato
+      this.catImageUrl = data[0].url; 
     });
   }
 }

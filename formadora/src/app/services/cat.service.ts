@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CatService {
-  private apiUrl = 'https://api.thecatapi.com/v1/images/search'; // URL da API
+  private apiUrl = 'https://api.thecatapi.com/v1/images/search'; 
 
   constructor(private http: HttpClient) {}
 
   getCat(): Observable<any> {
-    return this.http.get<any>(this.apiUrl); // Faz a requisição GET
+    return this.http.get<any>(this.apiUrl); 
   }
 }
